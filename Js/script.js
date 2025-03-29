@@ -44,4 +44,6 @@ var swiper = new Swiper(".slide-content", {
       950: { slidesPerView: 3 },
       1024: { slidesPerView: 4 },
   },
+  preventClicks: false, // Cho phép click vào thẻ <a>
+  preventClicksPropagation: false
 });
