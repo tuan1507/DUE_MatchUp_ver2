@@ -196,6 +196,29 @@ nav .fa-solid {
     max-width: 1200px;
     margin: auto;
 }
+.profile-card a{
+    text-decoration: none;
+}
+/* Button */
+.button {
+    border: none;
+    font-size: 20px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    
+}
+.button:hover {
+    background-color: #265DF2;
+}
 
 /* Profile Card */
 .profile-card {
@@ -259,6 +282,7 @@ nav .fa-solid {
 }
 
 .view-profile {
+    font-size: 20px;
     margin-top: 10px;
     background: #007bff;
     color: white;
@@ -269,7 +293,8 @@ nav .fa-solid {
     width: 100%;
 }
 .view-profile-duan {
-    margin-top: 30px;
+    font-size: 21px;
+    margin-top: 40px;
     background: #007bff;
     color: white;
     padding: 10px;
