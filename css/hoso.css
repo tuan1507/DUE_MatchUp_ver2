@@ -4,7 +4,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .header {
-    min-height: 90vh;
+    min-height: 80vh;
     width: 100%;
     background-image: linear-gradient(rgba(235, 209, 209, 0), rgba(250, 250, 254, 1)), 
                       url(../picture/background4.png);
@@ -123,30 +123,142 @@ nav {
     color: #fff;
     line-height: 32px;
 }
-
-
-.hero-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
+.button {
+    display: block;
+    margin: 10px auto;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    width: 40%;
+    border: none;
+    font-size: 25px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: rgb(165, 42, 42);
+    border-radius: 6px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-
-.hero-btn:hover {
-    border: 1px solid #f44336;
-    background: #f44336;
-    transition: .5s;
-
+.button:hover {
+    background-color: red;
 }
-
 nav .fa-solid {
     display: none;
 
+}
+.body_main_info {
+    justify-content: space-around;
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 60px;
+    padding-top: 50px;
+}
+
+.body_info-text {
+    width: 45%;
+}
+
+.body_info-text li {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.body_info-text h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.body_info-text p {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+/* ------------------------footer------------------------ */
+.footer {
+    color: #fff;
+}
+
+.footer-text {
+    width: 85%;
+    margin: auto;
+    padding-top: 130px;
+    display: flex;
+
+}
+
+.footer-text-text {
+    flex-basis: 31%;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    padding: 10px;
+}
+
+.footer-text-video {
+    flex-basis: 31%;
+}
+
+.footer-contact {
+    margin: 0 auto;
+    background: #2c3e50;
+    margin-top: 20px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-contact-add {
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    color: white;
+    width: 45%;
+    display: flex;
+}
+
+.footer-contact .contact {
+    color: white;
+    margin: 0 0 7px 0;
+    font-size: 20px;
+}
+
+.footer-contact .text {
+    margin-top: 5px;
+    color: white;
+}
+
+.contact-col {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.footer-contact-add div {
+    margin-left: 10px;
+}
+
+.red-btn {
+    font-size: 13px;
+    width: 50%;
 }
 
 /* Responsive */
@@ -179,55 +291,5 @@ nav .fa-solid {
 
     .nav-links ul li {
         padding: 10px;
-    }
-}
-.tuyendung {
-    margin-top: 300px;
-    display: flex;
-    flex-direction: column; /* Xếp ảnh theo chiều dọc */
-    justify-content: center; /* Căn giữa theo chiều dọc */
-    align-items: center; /* Căn giữa theo chiều ngang */
-    height: 100vh; /* Chiều cao toàn màn hình */
-}
-.tuyendung img {
-    max-width: 100%; /* Đảm bảo ảnh không bị tràn */
-    height: auto;
-    margin-bottom: 20px; /* Khoảng cách giữa ảnh */
-}
-.tuyendung .anhtd2 {
-    max-width: 100%; /* Đảm bảo ảnh không bị tràn */
-    height: auto;
-    margin-bottom: 20px; /* Khoảng cách giữa ảnh */
-    margin-top: -40px;
-}
-
-/* Xóa margin-bottom của ảnh cuối cùng để tránh khoảng trống thừa */
-.tuyendung img:last-child {
-    margin-bottom: 0;
-}
-/*  */
-.cta {
-    margin: 0 auto;
-    margin-top: 350px;
-    margin-bottom: 50px;
-    width: 80%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../picture/banner2.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
-
-}
-
-.cta h1 {
-    color: #fff;
-    margin-bottom: 40px;
-    padding: 0;
-}
-
-@media(max-with: 700px) {
-    .cta h1 {
-        font-size: 24px;
     }
 }
