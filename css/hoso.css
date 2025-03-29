@@ -129,11 +129,11 @@ nav {
     justify-content: center; /* Căn giữa theo chiều ngang */
     width: 50%;
     border: none;
-    font-size: 25px;
+    font-size: 30px;
     color: #FFF;
-    padding: 20px 16px;
+    padding: 16px 16px;
     background-color: rgb(165, 42, 42);
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-left: 260px;
@@ -145,31 +145,19 @@ nav .fa-solid {
     display: none;
 
 }
+
 .body_main_info {
-    justify-content: space-around;
+    justify-content: center;
     display: flex;
-    width: 85%;
+    width: 100%;
     margin: auto;
     margin-bottom: 60px;
     padding-top: 50px;
 }
 
 .body_info-text {
-    margin-top: 200px;
+    margin-top: 150px;
     width: 45%;
-}
-
-.body_info-text p {
-    width: 100%;
-    font-size: 30px;
-    margin-bottom: 10px;
-    line-height: 40px;
-    
-}
-
-hr {
-    margin-top: 20px;
-    margin-bottom: 15px;
 }
 /* ------------------------footer------------------------ */
 .footer {

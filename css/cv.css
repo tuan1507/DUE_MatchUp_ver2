@@ -1,21 +1,17 @@
-/* Định dạng chung */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
-
-/* Định dạng phần header */
 .header {
-    min-height: 70vh;
+    min-height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), 
-    url(../picture/background4.png);
+    background-image: linear-gradient(rgba(235, 209, 209, 0), rgba(250, 250, 254, 1)), 
+                      url(../picture/background4.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
-    padding: 20px 0;
 }
 
 /* Định dạng thanh điều hướng */
@@ -26,11 +22,48 @@ nav {
     padding: 15px 6%;
     background: transparent;
 }
-
-/* Định dạng logo */
+.textbox .title {
+    font-size: 100px;
+}
 .logo img {
-    margin-top: 1px;
-    width: 300px;
+    width: 500px; /* Giảm kích thước nếu cần */
+    display: block;
+    margin: 0 auto; /* Căn giữa và tạo khoảng cách trên dưới */
+    margin-top: -150px;
+}
+
+
+/* Định dạng thanh tìm kiếm */
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    margin-left: 40px;
+    padding: 8px 15px;
+    background: #fff;
+}
+
+.search-form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+    background: transparent;
+}
+
+.search-form .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.search-form .search-btn i {
+    color: #555;
 }
 
 /* Định dạng menu */
@@ -43,12 +76,12 @@ nav {
 .nav-links ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 28px;
+    font-size: 20px;
     padding: 8px 12px;
 }
 
 .nav-links ul li a:hover {
-    color: #f4f4f4;
+    color: white;
 }
 
 /* Gạch chân khi hover */
@@ -65,6 +98,52 @@ nav {
 
 .nav-links ul li:hover::after {
     width: 100%;
+}
+
+.textbox {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* line-height: 30px; */
+}
+
+.textbox h1 {
+    color: #333;
+    margin-top: -80px;
+    font-size: 62px;
+}
+
+.textbox p {
+    margin: 20px 0 40px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 32px;
+}
+.button {
+    display: block;
+    margin: 20px auto;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    width: 50%;
+    border: none;
+    font-size: 30px;
+    color: #FFF;
+    padding: 16px 16px;
+    background-color: rgb(165, 42, 42);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 260px;
+}
+.button:hover {
+    background-color: red;
+}
+nav .fa-solid {
+    display: none;
+
 }
 
 /* Định dạng form CV */
