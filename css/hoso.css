@@ -125,17 +125,18 @@ nav {
 }
 .button {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     justify-content: center; /* Căn giữa theo chiều ngang */
-    width: 40%;
+    width: 50%;
     border: none;
     font-size: 25px;
     color: #FFF;
-    padding: 8px 16px;
+    padding: 20px 16px;
     background-color: rgb(165, 42, 42);
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-left: 260px;
 }
 .button:hover {
     background-color: red;
@@ -157,20 +158,12 @@ nav .fa-solid {
     width: 45%;
 }
 
-.body_info-text li {
-    font-size: 20px;
-    line-height: 27px;
-}
-
-.body_info-text h3 {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
 .body_info-text p {
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 10px;
+    line-height: 40px;
+    
 }
 
 hr {
