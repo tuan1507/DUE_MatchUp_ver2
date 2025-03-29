@@ -1,0 +1,83 @@
+/* ------------------------footer------------------------ */
+.footer {
+    color: #fff;
+}
+
+.footer-text {
+    width: 85%;
+    margin: auto;
+    padding-top: 130px;
+    display: flex;
+
+}
+
+.footer-text-text {
+    flex-basis: 31%;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    padding: 10px;
+}
+
+.footer-text-video {
+    flex-basis: 31%;
+}
+
+.footer-contact {
+    margin: 0 auto;
+    background: #2c3e50;
+    margin-top: 20px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-contact-add {
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    color: white;
+    width: 45%;
+    display: flex;
+}
+
+.footer-contact .contact {
+    color: white;
+    margin: 0 0 7px 0;
+    font-size: 20px;
+}
+
+.footer-contact .text {
+    margin-top: 5px;
+    color: white;
+}
+
+.contact-col {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.footer-contact-add div {
+    margin-left: 10px;
+}
+
+.red-btn {
+    font-size: 13px;
+    width: 50%;
+}

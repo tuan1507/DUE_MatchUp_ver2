@@ -1,0 +1,169 @@
+.header {
+    min-height: 130vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), 
+    url(../picture/background2.jpg);
+    background-position: center;
+    position: relative;
+}
+/* Định dạng thanh điều hướng */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    background: transparent;
+}
+
+/* Định dạng logo */
+.logo img {
+    margin-top: -200px;
+    padding-top: -200px;
+    width: 600px;
+}
+
+/* Định dạng thanh tìm kiếm */
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    margin-left: 40px;
+    padding: 8px 15px;
+    background: #fff;
+}
+
+.search-form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+    background: transparent;
+}
+
+.search-form .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.search-form .search-btn i {
+    color: #555;
+}
+
+/* Định dạng menu */
+.nav-links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 12px;
+}
+
+.nav-links ul li a:hover {
+    color: white;
+}
+
+/* Gạch chân khi hover */
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #fefefe;
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.textbox {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* line-height: 30px; */
+}
+
+.textbox h1 {
+    font-size: 62px;
+}
+
+.textbox p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 25px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: .5s;
+
+}
+
+nav .fa-solid {
+    display: none;
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .search-box {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .nav-icons {
+        margin-top: 10px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        padding: 10px;
+    }
+}

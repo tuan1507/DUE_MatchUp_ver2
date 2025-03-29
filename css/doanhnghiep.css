@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), 
+    url(../picture/background.jpg);
+    background-position: center;
+    position: relative;
+}
+
+/* Định dạng thanh điều hướng */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    background: transparent;
+}
+
+.textbox .title h1{
+    font-size: 200px;
+}
+
+.logo img {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -150px;
+}
+
+/* Định dạng thanh tìm kiếm */
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    margin-left: 40px;
+    padding: 8px 15px;
+    background: #fff;
+}
+
+.search-form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+    background: transparent;
+}
+
+.search-form .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.search-form .search-btn i {
+    color: #555;
+}
+
+/* Định dạng menu */
+.nav-links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 12px;
+}
+
+.nav-links ul li a:hover {
+    color: white;
+}
+
+/* Gạch chân khi hover */
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #fefefe;
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.textbox {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textbox h1 {
+    font-size: 62px;
+}
+
+.textbox p {
+    margin: 20px 0 40px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 32px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: .5s;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .search-box {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .nav-icons {
+        margin-top: 10px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        padding: 10px;
+    }
+}
+
+.container {
+    padding-top: 20px;
+    height: 900px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 62px;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.company-card {
+    margin-left: 20px;
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+/* Hiệu ứng ảnh */
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    transition: 0.3s ease-in-out;
+}
+
+/* Lớp phủ tối hơn khi hover */
+.company-card:hover .img-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Tăng độ mờ */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Nổi bật chữ "Xem chi tiết" */
+.img-wrapper .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.2); /* Nền đen giúp chữ rõ hơn */
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    text-shadow: 2px 2px 5px black; /* Đổ bóng giúp chữ nổi bật */
+    transition: opacity 0.3s ease-in-out, font-size 0.3s;
+}
+
+/* Khi hover vào company-card */
+.company-card:hover .overlay {
+    opacity: 1;
+    font-size: 22px; /* Tăng size chữ khi hover */
+}
+
+
+.company-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.company-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.company-card a {
+    display: block;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.company-card a:hover {
+    text-decoration: underline;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    padding: 10px 15px;
+    text-decoration: none;
+    background: white;
+    border: 1px solid #ddd;
+    color: black;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background: #007bff;
+    color: white;
+}
+
+.pagination a:hover {
+    background: #ddd;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
