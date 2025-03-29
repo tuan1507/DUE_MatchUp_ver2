@@ -4,13 +4,11 @@
     font-family: 'Roboto', sans-serif;
 }
 .header {
-    min-height: 90vh;
+    min-height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(235, 209, 209, 0), rgba(250, 250, 254, 1)), 
-                      url(../picture/background2.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), 
+    url(../picture/background.jpg);
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
 }
 /* Định dạng thanh điều hướng */
@@ -21,13 +19,16 @@ nav {
     padding: 15px 6%;
     background: transparent;
 }
-
-/* Định dạng logo */
-.logo img {
-    margin-top: -100px;
-    padding-top: -200px;
-    width: 600px;
+.textbox .title {
+    font-size: 100px;
 }
+.logo img {
+    width: 500px; /* Giảm kích thước nếu cần */
+    display: block;
+    margin: 0 auto; /* Căn giữa và tạo khoảng cách trên dưới */
+    margin-top: -150px;
+}
+
 
 /* Định dạng thanh tìm kiếm */
 .search-form {
@@ -98,7 +99,7 @@ nav {
 
 .textbox {
     width: 90%;
-    color: #333;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -108,15 +109,17 @@ nav {
 }
 
 .textbox h1 {
+    margin-top: -80px;
     font-size: 62px;
 }
 
 .textbox p {
-    margin: 10px 0 40px;
+    margin: 20px 0 40px;
     font-size: 18px;
     color: #fff;
-    line-height: 25px;
+    line-height: 32px;
 }
+
 
 .hero-btn {
     display: inline-block;
@@ -174,20 +177,29 @@ nav .fa-solid {
         padding: 10px;
     }
 }
-
-.taocv {
-    width: 100%;
+.tuyendung {
+    margin-top: 300px;
     display: flex;
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
+    flex-direction: column; /* Xếp ảnh theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
     height: 100vh; /* Chiều cao toàn màn hình */
-    gap: 20px; /* Tạo khoảng cách giữa các ảnh */
+}
+.tuyendung img {
+    max-width: 100%; /* Đảm bảo ảnh không bị tràn */
+    height: auto;
+    margin-bottom: 20px; /* Khoảng cách giữa ảnh */
+}
+.tuyendung .anhtd2 {
+    max-width: 100%; /* Đảm bảo ảnh không bị tràn */
+    height: auto;
+    margin-bottom: 20px; /* Khoảng cách giữa ảnh */
+    margin-top: -40px;
 }
 
-.taocv img {
-    padding-top: 320px;
-    max-width: 100%;
-    height: auto;
+/* Xóa margin-bottom của ảnh cuối cùng để tránh khoảng trống thừa */
+.tuyendung img:last-child {
+    margin-bottom: 0;
 }
 /*  */
 .cta {
